@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min project solar system</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calculate the weight of an object on a planet</h1>
+    </header>
+
+    <div class="input-container">
+        <input type="text" placeholder="Mass in kilogram" class="mass">
+        <input type="text" list="planets" id="planetInput" placeholder="--select planet--">
+        <datalist id="planets">
+            <option value="Mercury">
+            <option value="Venus">
+            <option value="Earth">
+            <option value="Mars">
+            <option value="Jupiter">
+            <option value="Saturn">
+            <option value="Uranus">
+            <option value="Neptune">
+            <option value="Pluto">
+            <option value="Moon">
+        </datalist>
+        <button class="calc-weight">Calculate weight</button>
+    </div>
+
+    <div class="lastContainer">
+        <img src="images/earth.png" alt="planetimage" class="planet-image">
+        <div class="weight-container">
+            <h3>The weight of the object on <span class="planet-name">Mercury</span></h3>
+            <div class="answer">
+                370.00 N
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

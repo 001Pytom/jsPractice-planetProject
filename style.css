@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  background-image: url(images/galaxy.gif);
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding-top: 3vh;
+}
+
+.input-container {
+  width: 100vw;
+  max-width: 45vw;
+  margin: 0 auto;
+  margin-top: 7vh;
+  display: flex;
+  gap: 10px;
+}
+
+input,
+button {
+  padding: 0.5vw;
+  outline: none;
+}
+
+.mass {
+  flex: 1;
+}
+button {
+  background-color: #c4c3c3;
+  color: #fff;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.lastContainer {
+  background-color: hsla(0, 0%, 100%, 0.1);
+  width: 100%;
+  margin: auto;
+  max-width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8vw;
+  margin-top: 10vh;
+  padding: 4vh 3vw;
+}
+
+.lastContainer img {
+  width: 25vw;
+}
+
+.weight-container {
+  background-color: hsla(0, 0%, 100%, 0.11);
+  padding: 3vh 4vw;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.answer {
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(0, 0%, 100%, 0.08);
+}
+
+.weight-container h3 {
+  font-weight: lighter;
+}
+
+.weight-container span {
+  text-transform: uppercase;
+}
+
+/* style pop up messages */
+.error-container {
+  background-color: hsla(0, 0%, 100%, 0.1);
+  padding: 3vh 5vw;
+  font-size: 1.6vw;
+}
+
+@media screen and (max-width: 900px) {
+  .input-container {
+    flex-direction: column;
+  }
+  .lastContainer {
+    flex-direction: column;
+  }
+  .weight-container h3 {
+    font-size: 3vw;
+  }
+  .answer {
+    width: 20vw;
+    height: 20vw;
+  }
+}
